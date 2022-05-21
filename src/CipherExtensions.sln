@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31808.319
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3ADEC19D-8737-4C98-9294-C0DBE73938F8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{C5DCE10D-7DBE-488E-B732-7BC847C8B1E9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Symmetric", "Symmetric", "{F098ADE4-6C8B-4AF9-9575-063111AB9EA2}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Garciss.Symmetric.AES", "src\Symmetric\Garciss.Symmetric.AES\Garciss.Symmetric.AES.csproj", "{3CA2A8AF-27A9-417F-9F34-99D617A9E355}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3CA2A8AF-27A9-417F-9F34-99D617A9E355}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3CA2A8AF-27A9-417F-9F34-99D617A9E355}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CA2A8AF-27A9-417F-9F34-99D617A9E355}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{3CA2A8AF-27A9-417F-9F34-99D617A9E355}.Debug|x64.Build.0 = Debug|Any CPU
+		{3CA2A8AF-27A9-417F-9F34-99D617A9E355}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{3CA2A8AF-27A9-417F-9F34-99D617A9E355}.Debug|x86.Build.0 = Debug|Any CPU
+		{3CA2A8AF-27A9-417F-9F34-99D617A9E355}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3CA2A8AF-27A9-417F-9F34-99D617A9E355}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3CA2A8AF-27A9-417F-9F34-99D617A9E355}.Release|x64.ActiveCfg = Release|Any CPU
+		{3CA2A8AF-27A9-417F-9F34-99D617A9E355}.Release|x64.Build.0 = Release|Any CPU
+		{3CA2A8AF-27A9-417F-9F34-99D617A9E355}.Release|x86.ActiveCfg = Release|Any CPU
+		{3CA2A8AF-27A9-417F-9F34-99D617A9E355}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{F098ADE4-6C8B-4AF9-9575-063111AB9EA2} = {C5DCE10D-7DBE-488E-B732-7BC847C8B1E9}
+		{3CA2A8AF-27A9-417F-9F34-99D617A9E355} = {F098ADE4-6C8B-4AF9-9575-063111AB9EA2}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9910F84-F791-4753-8A02-193B05CB3472}
+	EndGlobalSection
+EndGlobal
