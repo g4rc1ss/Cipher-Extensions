@@ -19,7 +19,7 @@ jobs:
         dotnet-version: 6.0.x
         
     - name: Dotnet Build
-      run: dotnet build --configuration Release ./src/SolutionTemplate.sln
-
+      run: dotnet build --configuration Release ./src/CipherExtensions.sln
+    
     - name: Dotnet Test
-      run: dotnet test --configuration Release ./src/SolutionTemplate.sln
+      run: dotnet test --configuration Release ./src/CipherExtensions.sln

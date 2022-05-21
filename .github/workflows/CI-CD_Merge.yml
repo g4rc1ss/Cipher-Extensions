@@ -1,0 +1,42 @@
+name: On Merge
+
+on: 
+  push:
+    branches: 
+      - main
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    
+    steps:
+    
+    - uses: actions/checkout@v2
+    
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+    
+    
+    - name: Dotnet Build
+      run: dotnet build --configuration Release ./src/CipherExtensions.sln
+
+    - name: Generar nuspec
+      run: |
+        cd tools/NugetConfig/
+        .\nuspecGeneratorNetCoreNetStandard.ps1
+      shell: powershell
+    
+
+    - name: Nuget Pack para preparar el paquete
+      run: |
+        cd tools/NugetConfig/
+        nuget pack CipherExtensions.nuspec -Verbosity Detail
+        
+    - name: Push generated package to GitHub registry
+      run: |
+        cd tools/NugetConfig/
+        nuget push *.nupkg ${{ secrets.USER_TOKEN_GITHUB_PACKAGE }} -Source https://api.nuget.org/v3/index.json -SkipDuplicate
+        
