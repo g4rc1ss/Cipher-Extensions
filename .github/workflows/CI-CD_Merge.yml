@@ -33,7 +33,7 @@ jobs:
     - name: Nuget Pack para preparar el paquete
       run: |
         cd tools/NugetConfig/
-        nuget pack CipherExtensions.nuspec -Verbosity Detail
+        nuget pack Garciss.CipherExtensions.nuspec -Verbosity Detail
         
     - name: Push generated package to GitHub registry
       run: |

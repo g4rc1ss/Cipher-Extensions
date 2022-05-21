@@ -11,7 +11,7 @@ $versionNuget = 1.0
 # Nombre del archivo a generar 
 $rutaNuspec = Convert-Path .
 
-$rutaNuspec += '/CipherExtensions.nuspec'
+$rutaNuspec += '/Garciss.CipherExtensions.nuspec'
 
 # Ruta raiz donde localizar los archivos .csproj
 $rutaCSProj = '../../src/src/'
@@ -23,7 +23,7 @@ $rutaDLL = "../PackagesCompilaciones/"
 # ___________________________________________________________
 
 ## Datos del paquete Nuget
-$id = "CipherExtensions"
+$id = "Garciss.CipherExtensions"
 $title = "Cipher Extensions"
 $authors = "Asier Garcia"
 $owners = "Asier Garcia"
