@@ -29,7 +29,7 @@ $authors = "Asier Garcia"
 $owners = "Asier Garcia"
 $requireLicenseAcceptance = "false"
 $description = "Librerias creadas para futuros proyectos o usos"
-$repository = "https://github.com/g4rc1ss/CipherExtensions"
+$repository = "https://github.com/g4rc1ss/Cipher-Extensions"
 
 
 $versionEntornoCarpeta = ""
