@@ -38,5 +38,5 @@ jobs:
     - name: Push generated package to GitHub registry
       run: |
         cd tools/NugetConfig/
-        nuget push *.nupkg ${{ secrets.USER_TOKEN_GITHUB_PACKAGE }} -Source https://api.nuget.org/v3/index.json -SkipDuplicate
+        nuget push *.nupkg ${{ secrets.NUGET_SECRET_TOKEN }} -Source https://api.nuget.org/v3/index.json -SkipDuplicate
         
