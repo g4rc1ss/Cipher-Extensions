@@ -1,0 +1,25 @@
+name: Pipeline_PullRequests
+
+on:
+  pull_request:
+    branches: 
+      - main
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+    
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v1
+      with:
+        dotnet-version: 6.0.x
+        
+    - name: Dotnet Build
+      run: dotnet build --configuration Release ./src/SolutionTemplate.sln
+
+    - name: Dotnet Test
+      run: dotnet test --configuration Release ./src/SolutionTemplate.sln
